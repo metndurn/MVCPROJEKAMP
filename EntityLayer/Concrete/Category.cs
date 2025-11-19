@@ -12,5 +12,7 @@ namespace EntityLayer.Concrete
 		public string CategryName { get; set; }
 		public string CategoryDescription { get; set; }
 		public string CategoryStatus { get; set; }
+
+		public ICollection<Heading> Headings { get; set; }//bire çok ilişki kuruldu yani bir kategorinin birden fazla yazarı olabilir demektir
 	}
 }
