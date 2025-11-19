@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccsessLayer.Abstract
 {
-	public interface ICategoryDal
+	public interface ICategoryDal //Category Data Access Layer interface 
 	{
 		//CRUD OPERASYONLARI İÇİN METOTLAR
 		List<Category> List();
