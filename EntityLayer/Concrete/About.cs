@@ -8,7 +8,7 @@ namespace EntityLayer.Concrete
 {
 	public class About
 	{
-		public int Id { get; set; }
+		public int AboutId { get; set; }
 		public string AboutDetails1 { get; set; }
 		public string AboutDetails2 { get; set; }
 		public string AboutImage1 { get; set; }

@@ -8,10 +8,16 @@ namespace EntityLayer.Concrete
 {
 	public class Content
 	{
-		public int Id { get; set; }
+		public int ContentId { get; set; }
 		public string ContentValue { get; set; }
 		public DateTime ContentDate { get; set; }
-		//ContentYazar ilişkili olacagı ıcın bunlar olacak yanı bu yazı kım tarafından yazıldıgını belırtecegız
-		//ContentBaslik ılıskısı ıcınde bunlar olacak yanı bu yazı hangi baslıga aıt oldugunu belırtecegız
+
+		//ilişkiler bire çok oldugu ıcın buraya 2 tane nesne tanımlayacag��z yani bir baslıgın birden fazla ıcerıgı olabilir
+		public int HeadindId { get; set; }
+		public virtual Heading Heading { get; set; }
+
+		//bir yazarın birden fazla ıcerıgı olabilir 
+		public int WriterId { get; set; }
+		public virtual Writer Writer { get; set; }
 	}
 }
