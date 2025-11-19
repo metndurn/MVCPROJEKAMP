@@ -1,2 +1,4 @@
 concrete projede somut olanlar ıcın yazılır entıtyler burada olacak 
 abstract ıse soyut olanlar ıcın olacak
+entityler arası ilişkiler kuruldu
+Key Ve String Length Attributeleri entity içindeki sınıflarda kısıtlama yapabilmek ıcın kullandık
