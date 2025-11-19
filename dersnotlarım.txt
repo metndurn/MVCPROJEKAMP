@@ -1,0 +1,2 @@
+concrete projede somut olanlar ıcın yazılır entıtyler burada olacak 
+abstract ıse soyut olanlar ıcın olacak
