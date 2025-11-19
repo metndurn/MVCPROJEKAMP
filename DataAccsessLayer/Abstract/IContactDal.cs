@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccsessLayer.Abstract
 {
-	public interface ICategoryDal : IRepository<Category> //Category Data Access Layer interface 
+	public interface IContactDal : IRepository<Contact>
 	{
-		//CRUD OPERASYONLARI İÇİN METOTLAR
 	}
 }
