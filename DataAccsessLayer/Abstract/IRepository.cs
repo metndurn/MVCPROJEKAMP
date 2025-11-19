@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccsessLayer.Abstract
+{
+	/*generic yapı oluşturarak tek tek her tablo için interfaceler olusturmak 
+	 yerine tek bir interface ile tum tablolar için CRUD operasyonları yapabilmeyi saglıyoruz*/
+	public interface IRepository<T> 
+	{
+		List<T> List();
+		void Insert(T t);
+		void Update(T t);
+		void Delete(T t);
+	}
+}
