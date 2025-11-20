@@ -23,9 +23,12 @@ namespace BusinessLayer.Concrete
 			if (category.CategoryName == "" || category.CategoryName.Length <= 3 ||
 				category.CategoryDescription == "" || category.CategoryName.Length > 51)
 			{
-
+				//hata mesajı
 			}
-		}
+			else
+			{
+				repoCategory.Insert(category);
+			}
 
 	}
 }
