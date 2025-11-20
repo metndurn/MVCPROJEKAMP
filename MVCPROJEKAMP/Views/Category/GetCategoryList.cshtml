@@ -1,0 +1,30 @@
+﻿@using EntityLayer.Concrete @*burada ilgili sınıfın ne ise onu cagırmamız gerekıyor katmanlı mımarıde daha dıkkatlı ol*@
+@*burada view'in ne tür bir model ile calısacagını soyluyoruz*@
+@model List<Category>
+
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<br />
+<table class="table table-bordered">
+    <tr class="text-center">
+        <th>Kategori Id</th>
+        <th>Kategori Adı</th>
+        <th>Kategori Açıklaması</th>
+        <th>Kategori Durumu</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var category in Model)
+    {
+        <tr>
+            <td>@category.CategoryId</td>
+            <td>@category.CategoryName</td>
+            <td>@category.CategoryDescription</td>
+            <td>@category.CategoryStatus</td>
+            <td><button class=" btn btn-success">Güncelle</button></td>
+            <td><button class=" btn btn-danger">Sil</button></td>
+        </tr>
+    }
+</table>
