@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -177,6 +178,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -214,9 +216,9 @@
       <Project>{5c31de30-606c-4ddc-bdfd-71ca398340a4}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataAccsessLayer\DataAccsessLayer.csproj">
+    <ProjectReference Include="..\DataAccsessLayer\DataAccessLayer.csproj">
       <Project>{b0aac7dd-fb9f-40af-bd75-3f9fe671a2b2}</Project>
-      <Name>DataAccsessLayer</Name>
+      <Name>DataAccessLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
       <Project>{d62c55a1-2996-445c-b898-e8c9216f3e4b}</Project>
